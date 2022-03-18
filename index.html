@@ -7,7 +7,170 @@
     <title>Sport</title>
   </head>
   <body>
-    <!--  -->
-    <script src="/src/main.js"></script>
+    <!-- header -->
+    <div class="header">
+      <div class="container">
+        <div class="flex">
+          <!-- header logo -->
+          <div class="logo flex items-center justify-between">
+            <div class="logo-icon">
+              <img src="src/images/logo.png" alt="logo image" />
+            </div>
+
+            <div class="logo-title">
+              <span class="block secondary-font-extra-bold fs-md uppercase"
+                >Gorki zabrze</span
+              >
+
+              <span class="uppercase color-light-gray">official site</span>
+            </div>
+          </div>
+
+          <!-- header sub-link -->
+          <nav class="nav flex flex-col">
+            <!-- sub nav -->
+            <div class="sub-nav flex fs-sm">
+              <div>
+                <img src="src/images/adidas-logo.webp" alt="logo" />
+              </div>
+
+              <div>Allianz @</div>
+              <div>En &downarrow;</div>
+            </div>
+
+            <!-- main nav -->
+            <div class="main-nav flex justify-between">
+              <ul
+                class="list secondary-font-bold fs-sm uppercase flex justify-between items-center"
+              >
+                <li class="list-item">news</li>
+                <li class="list-item">club</li>
+                <li class="list-item">teams</li>
+                <li class="list-item">matches</li>
+                <li class="list-item">tickets</li>
+                <li class="list-item">fans</li>
+                <li class="list-item">shop</li>
+              </ul>
+
+              <div class="search-icon">
+                <img src="src/images/icons/search.svg" alt="search icon" />
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero -->
+    <div class="hero" data-slider-number>
+      <div class="container flex justify-between">
+        <!-- start section -->
+        <div class="hero-start">
+          <div class="badge uppercase fs-sm">club</div>
+
+          <h1 class="hero-title uppercase secondary-font-bold fs-ultra-lg">
+            miliks's Special visit
+          </h1>
+
+          <div class="inline-flex gap-3 justify-between items-center">
+            <img src="src/images/icons/hero-link-icon.svg" alt="icon" />
+            <span class="uppercase border-link secondary-font-bold">more</span>
+          </div>
+        </div>
+
+        <!-- end section -->
+        <div class="hero-end">
+          <img
+            src="src/images/background/hero-player.png"
+            alt="hero player image "
+          />
+        </div>
+      </div>
+
+      <!-- social media icons -->
+      <div class="social-media">
+        <div class="item icon-facebook">
+          <img src="src/images/icons/facebook.svg" alt="social media icon" />
+        </div>
+
+        <div class="item icon-twitter">
+          <img src="src/images/icons/twitter.svg" alt="social media icon" />
+        </div>
+
+        <div class="item icon-google">
+          <img src="src/images/icons/google.svg" alt="social media icon" />
+        </div>
+
+        <div class="item icon-linkedin">
+          <img src="src/images/icons/linkedin.svg" alt="social media icon" />
+        </div>
+      </div>
+    </div>
+
+    <!-- news -->
+    <section class="news-wrapper">
+      <div class="news">
+        <div class="flex justify-end gap-4 justify-end">
+          <!-- news item -->
+          <div class="news-item flex justify-between">
+            <div class="item-bg">
+              <img src="src/images/news/news-1.jpg" alt="news background" />
+            </div>
+
+            <div class="item-content">
+              <div class="sub-title uppercase">latest news</div>
+
+              <h2 class="primary-font">Roman Gergle scorer 4 goals</h2>
+
+              <div class="inline-flex gap-3 justify-between items-center">
+                <img src="src/images/icons/hero-link-icon.svg" alt="icon" />
+                <span class="uppercase border-link secondary-font-bold"
+                  >more</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- news items -->
+          <div class="news-item flex justify-between">
+            <div class="item-bg">
+              <img src="src/images/news/news-1.jpg" alt="news background" />
+            </div>
+
+            <div class="item-content">
+              <div class="sub-title uppercase">latest news</div>
+
+              <h2 class="primary-font">Roman Gergle scorer 4 goals</h2>
+
+              <div class="inline-flex gap-3 justify-between items-center">
+                <img src="src/images/icons/hero-link-icon.svg" alt="icon" />
+                <span class="uppercase border-link secondary-font-bold"
+                  >more</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- match schedule -->
+    <section class="match-schedule">
+      <div class="container">
+        <!-- title -->
+        <div class="flex justify-between inline-flex gap-4">
+          <h2 class="fs-lg secondary-font-bold uppercase word-wrap color-white">
+            match schedule
+          </h2>
+
+          <div class="inline-flex gap-3 justify-between items-center">
+            <img src="src/images/icons/hero-link-icon.svg" alt="icon" />
+            <span class="uppercase border-link secondary-font-bold">more</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

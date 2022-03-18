@@ -1,0 +1,45 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(0, 0%, 67%);
+
+  --color-primary: hsl(226, 60%, 38%);
+  --color-dark-primary: hsl(222, 22%, 20%);
+  --color-darker-primary: hsl(222, 48%, 8%);
+  --color-light-primary: hsl(226, 43%, 49%);
+
+  --color-secondary: hsl(354, 86%, 54%);
+  --color-dark-secondary: hsl(357, 100%, 42%);
+  --color-light-secondary: hsl(357, 100%, 64%);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-light-gray {
+  color: var(--color-light-gray);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-dark-primary {
+  color: var(--color-dark-primary);
+}
+
+.color-light-primary {
+  color: var(--color-light-primary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-dark-secondary {
+  color: var(--color-dark-secondary);
+}
+
+.color-light-secondary {
+  color: var(--color-light-secondary);
+}

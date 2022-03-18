@@ -1,0 +1,63 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  src: url(@fonts/Montserrat.ttf) format('truetype-variations');
+}
+
+// avenir font
+@font-face {
+  font-family: 'avenir';
+  src: url(@fonts/avenir.otf);
+}
+
+.primary-font {
+  font-family: 'avenir', 'Helvetica Neue', sans-serif;
+}
+
+.secondary-font-ultra-light {
+  font-family: 'Montserrat', sans-serif;
+  font-variation-settings: 'wght' 100;
+}
+
+.secondary-font-light {
+  font-family: 'Montserrat', sans-serif;
+  font-variation-settings: 'wght' 300;
+}
+
+.secondary-font-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-variation-settings: 'wght' 700;
+}
+
+.secondary-font-extra-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-variation-settings: 'wght' 800;
+}
+
+.fs-sm {
+  font-size: 0.8rem;
+}
+
+.fs {
+  font-size: 1.2rem;
+}
+
+.fs-md {
+  font-size: 1.4rem;
+}
+
+.fs-lg {
+  font-size: 1.8rem;
+}
+
+.fs-xl {
+  font-size: 2.2rem;
+}
+
+.fs-2xl {
+  font-size: 2.6rem;
+}
+
+.fs-ultra-lg {
+  font-size: 4.5rem;
+}
