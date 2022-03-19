@@ -9,55 +9,53 @@
   <body>
     <!-- header -->
     <div class="header">
-      <div class="container">
-        <div class="flex">
-          <!-- header logo -->
-          <div class="logo flex items-center justify-between">
-            <div class="logo-icon">
-              <img src="src/images/logo.png" alt="logo image" />
-            </div>
-
-            <div class="logo-title">
-              <span class="block secondary-font-extra-bold fs-md uppercase"
-                >Gorki zabrze</span
-              >
-
-              <span class="uppercase color-light-gray">official site</span>
-            </div>
+      <div class="container flex">
+        <!-- header logo -->
+        <div class="logo flex items-center justify-between">
+          <div class="logo-icon">
+            <img src="src/images/logo.png" alt="logo image" />
           </div>
 
-          <!-- header sub-link -->
-          <nav class="nav flex flex-col">
-            <!-- sub nav -->
-            <div class="sub-nav flex fs-sm">
-              <div>
-                <img src="src/images/adidas-logo.webp" alt="logo" />
-              </div>
+          <div class="logo-title">
+            <span class="block secondary-font-extra-bold fs-md uppercase"
+              >Gorki zabrze</span
+            >
 
-              <div>Allianz @</div>
-              <div>En &downarrow;</div>
-            </div>
-
-            <!-- main nav -->
-            <div class="main-nav flex justify-between">
-              <ul
-                class="list secondary-font-bold fs-sm uppercase flex justify-between items-center"
-              >
-                <li class="list-item">news</li>
-                <li class="list-item">club</li>
-                <li class="list-item">teams</li>
-                <li class="list-item">matches</li>
-                <li class="list-item">tickets</li>
-                <li class="list-item">fans</li>
-                <li class="list-item">shop</li>
-              </ul>
-
-              <div class="search-icon">
-                <img src="src/images/icons/search.svg" alt="search icon" />
-              </div>
-            </div>
-          </nav>
+            <span class="uppercase color-light-gray">official site</span>
+          </div>
         </div>
+
+        <!-- header sub-link -->
+        <nav class="nav flex flex-col">
+          <!-- sub nav -->
+          <div class="sub-nav flex fs-sm">
+            <div>
+              <img src="src/images/adidas-logo.webp" alt="logo" />
+            </div>
+
+            <div>Allianz @</div>
+            <div>En &downarrow;</div>
+          </div>
+
+          <!-- main nav -->
+          <div class="main-nav flex gap-5">
+            <ul
+              class="list secondary-font-bold fs-sm uppercase flex justify-between items-center"
+            >
+              <li class="list-item">news</li>
+              <li class="list-item">club</li>
+              <li class="list-item">teams</li>
+              <li class="list-item">matches</li>
+              <li class="list-item">tickets</li>
+              <li class="list-item">fans</li>
+              <li class="list-item">shop</li>
+            </ul>
+
+            <div class="search-icon">
+              <img src="src/images/icons/search.svg" alt="search icon" />
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
 
@@ -117,7 +115,7 @@
               <img src="src/images/news/news-1.jpg" alt="news background" />
             </div>
 
-            <div class="item-content">
+            <div class="item">
               <div class="sub-title uppercase">latest news</div>
 
               <h2 class="primary-font">Roman Gergle scorer 4 goals</h2>
@@ -134,10 +132,10 @@
           <!-- news items -->
           <div class="news-item flex justify-between">
             <div class="item-bg">
-              <img src="src/images/news/news-1.jpg" alt="news background" />
+              <img src="src/images/news/news-2.jpg" alt="news background" />
             </div>
 
-            <div class="item-content">
+            <div class="item">
               <div class="sub-title uppercase">latest news</div>
 
               <h2 class="primary-font">Roman Gergle scorer 4 goals</h2>
@@ -156,9 +154,9 @@
 
     <!-- match schedule -->
     <section class="match-schedule">
-      <div class="container">
-        <!-- title -->
-        <div class="flex justify-between inline-flex gap-4">
+      <div class="container relative">
+        <!--  title  -->
+        <div class="match-title flex justify-between inline-flex gap-4">
           <h2 class="fs-lg secondary-font-bold uppercase word-wrap color-white">
             match schedule
           </h2>
@@ -167,6 +165,293 @@
             <img src="src/images/icons/hero-link-icon.svg" alt="icon" />
             <span class="uppercase border-link secondary-font-bold">more</span>
           </div>
+        </div>
+
+        <!-- cards -->
+        <div class="flex">
+          <!-- item -->
+          <div class="card text-center">
+            <div class="card-header secondary-font-light color-light-gray">
+              EKSTRAKLASA
+            </div>
+
+            <div class="card-body flex items-center">
+              <div class="">
+                <img src="src/images/logo.png" alt="club image" />
+                <p>CORNINK ZABRZE</p>
+              </div>
+
+              <h2 class="fs-2xl flex gap-4 justify-between primary-font">
+                <span> 5 </span>
+                <span> : </span>
+                <span> 2 </span>
+              </h2>
+
+              <div>
+                <img src="src/images/clubs/club-1.png" alt="club image" />
+                <p>CORNINK ZABRZE</p>
+              </div>
+            </div>
+
+            <div class="secondary-font-light color-light-gray uppercase">
+              <p>
+                zabrze city stadium <br />
+                26.03.2016
+              </p>
+            </div>
+          </div>
+
+          <!-- item -->
+          <div class="card text-center">
+            <div class="card-header secondary-font-light color-light-gray">
+              EKSTRAKLASA
+            </div>
+
+            <div class="card-body flex items-center">
+              <div class="">
+                <img src="src/images/logo.png" alt="club image" />
+                <p>LECIA WARRSZAWA</p>
+              </div>
+
+              <h2 class="fs-2xl primary-font">vs</h2>
+
+              <div>
+                <img src="src/images/clubs/club-2.png" alt="club image" />
+                <p>CORNINK ZABRZE</p>
+              </div>
+            </div>
+
+            <div class="secondary-font-light color-light-gray uppercase">
+              <p>
+                polish army stadium <br />
+                30.03.2016
+              </p>
+            </div>
+          </div>
+
+          <!-- item -->
+          <div class="card text-center">
+            <div class="card-header secondary-font-light color-light-gray">
+              EKSTRAKLASA
+            </div>
+
+            <div class="card-body flex items-center">
+              <div class="">
+                <img src="src/images/logo.png" alt="club image" />
+                <p>SLASK WROCTAW</p>
+              </div>
+
+              <h2 class="fs-2xl primary-font">vs</h2>
+
+              <div>
+                <img src="src/images/clubs/club-3.png" alt="club image" />
+                <p>CORNINK ZABRZE</p>
+              </div>
+            </div>
+
+            <div class="secondary-font-light color-light-gray uppercase">
+              <p>
+                municipal Stadium in wroclaw <br />
+                30.03.2016
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- goalscorer -->
+    <section class="goalscorer">
+      <div class="container">
+        <div class="flex gap-5 justify-between items-center">
+          <!-- title -->
+          <div class="relative flex flex-col justify-around">
+            <h1 class="fs-ultra-lg secondary-font-bold word-wrap">
+              SEA SON STATS
+            </h1>
+
+            <p class="color-gray fs-md">EKSTRAKLASA</p>
+          </div>
+
+          <!-- player -->
+          <div class="player relative flex flex-col">
+            <h4 class="m-0 color-gray primary-font">TOP GOALSCORER</h4>
+
+            <div class="player-img">
+              <img
+                src="src/images/players/goalscorer.png"
+                class="position-absolute"
+              />
+            </div>
+            <div class="player-name flex flex-col items-end">
+              <h2 class="m-0 fs-2xl secondary-font-extra-bold word-wrap">
+                ROMAN GERGEL
+              </h2>
+              <h3 class="m-0 secondary-font-ultra-light fs-ultra-lg">10</h3>
+              <p class="m-0 secondary-font-bold fs-md">GOALS</p>
+            </div>
+          </div>
+
+          <!-- player info -->
+          <div
+            class="player-info relative flex flex-col justify-between text-center secondary-font-light"
+          >
+            <!-- item -->
+            <div class="item flex justify-between items-center">
+              <div class="top-left">
+                <h2 class="">30</h2>
+                <p class="nowrap">MATCHES PLAYED</p>
+              </div>
+
+              <div class="top-right">
+                <h2 class="">48</h2>
+                <p class="">GOALS</p>
+              </div>
+            </div>
+
+            <!-- item -->
+            <div class="item flex justify-between items-center">
+              <div class="bottom-left">
+                <h2 class="">12</h2>
+                <p class="">WINS</p>
+              </div>
+
+              <div class="bottom-right">
+                <h2 class="">8</h2>
+                <p class="">LOSSES</p>
+              </div>
+            </div>
+
+            <!-- item -->
+            <div class="item-center">
+              <h1 class="m-0 secondary-font-bold fs-ultra-lg">6</h1>
+              <p class="m-0 word-wrap">LEAGUE POSITION</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- companies -->
+    <section class="companies">
+      <div class="container flex flex-col justify-start items-center">
+        <div class="team-logo flex items-center">
+          <img src="src/images/logo.png" />
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center">
+          <div class="icon">
+            <img src="src/images/companies/adidas.png" />
+          </div>
+
+          <div class="icon">
+            <img src="src/images/companies/allianz.png" />
+          </div>
+
+          <div class="icon">
+            <img src="src/images/companies/toyota.png" />
+          </div>
+
+          <div class="icon">
+            <img src="src/images/companies/adidas.png" />
+          </div>
+
+          <div class="icon">
+            <img src="src/images/companies/allianz.png" />
+          </div>
+
+          <div class="icon">
+            <img src="src/images/companies/toyota.png" />
+          </div>
+
+          <div class="icon">
+            <img src="src/images/companies/allianz.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container flex items-start">
+        <!-- links -->
+        <div class="flex gap-5 items-start justify-between fs-sm">
+          <!-- item 1 -->
+          <div>
+            <h5 class="fs-md uppercase secondary-font-bold">news</h5>
+
+            <div class="flex flex-col gap-3 primary-font color-gray">
+              <a href="#" class="uppercase">all</a>
+              <a href="#" class="uppercase">club news</a>
+              <a href="#" class="uppercase nowrap">media center</a>
+              <a href="#" class="uppercase">photos</a>
+              <a href="#" class="uppercase">video</a>
+              <a href="#" class="uppercase">rss</a>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div>
+            <h5 class="fs-md uppercase secondary-font-bold">tickets</h5>
+
+            <div class="flex flex-col gap-3 primary-font color-gray">
+              <a href="#" class="uppercase">tickets</a>
+              <a href="#" class="uppercase">online ticket siiop</a>
+              <a href="#" class="uppercase nowrap">vouchers</a>
+              <a href="#" class="uppercase">combi-ticket</a>
+              <a href="#" class="uppercase">payment</a>
+              <a href="#" class="uppercase">contact and booking</a>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div>
+            <h5 class="fs-md uppercase secondary-font-bold">matches</h5>
+
+            <div class="flex flex-col gap-3 primary-font color-gray">
+              <a href="#" class="uppercase">standings</a>
+              <a href="#" class="uppercase">fixtures</a>
+              <a href="#" class="uppercase nowrap">luga</a>
+              <a href="#" class="uppercase">poush cup</a>
+              <a href="#" class="uppercase">poush super cup</a>
+            </div>
+          </div>
+
+          <!-- item 4 -->
+          <div>
+            <h5 class="fs-md uppercase secondary-font-bold">fans</h5>
+
+            <div class="flex flex-col gap-3 primary-font color-gray">
+              <a href="#" class="uppercase">fan clubs</a>
+              <a href="#" class="uppercase">social media</a>
+            </div>
+
+            <h5 class="fs-md uppercase secondary-font-bold">fans</h5>
+            <div class="flex flex-col gap-3 primary-font color-gray">
+              <a href="#" class="uppercase nowrap">arena tour</a>
+              <a href="#" class="uppercase">matchday tour</a>
+              <a href="#" class="uppercase">online</a>
+            </div>
+          </div>
+
+          <!-- item 5 -->
+
+          <div class="card flex items-start flex-column">
+            <div class="card-header">
+              <h2 class="secondary-font-bold word-wrap uppercase">
+                business newsletter mobile app
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright">
+        <div class="container flex gap-4 secondary-font-bold uppercase">
+          <a href="#">imprint</a>
+          <a href="#">privacy policy</a>
+          <a href="#">terms and conditions</a>
+          <a href="#">faq</a><a href="#">contact</a>
         </div>
       </div>
     </section>

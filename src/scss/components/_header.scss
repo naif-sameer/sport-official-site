@@ -1,12 +1,18 @@
 .header {
   background-color: var(--color-darker-primary);
   color: var(--color-white);
+  overflow: hidden;
 
   .logo {
     padding-right: 2rem;
+    max-width: 200px;
 
     .logo-icon {
       max-width: 100px;
+
+      img {
+        width: 70px;
+      }
     }
 
     .logo-title {
@@ -16,19 +22,24 @@
   }
 
   .nav {
-    flex-basis: 65%;
-
+    flex: 1;
+    position: relative;
     border-left: 1px solid var(--color-dark-primary);
 
     &::before {
       content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100vw;
       border-top: 1px solid var(--color-dark-primary);
       align-self: stretch;
     }
 
     .sub-nav {
+      max-width: 800px;
       // flex: 1;
-      align-self: flex-end;
+      align-self: center;
       padding-right: 2rem;
 
       & > * {

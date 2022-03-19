@@ -1,5 +1,45 @@
 .match-schedule {
-  padding: 2rem 0;
   background-color: var(--color-darker-primary);
   color: var(--color-white);
+
+  .border-link {
+    border-bottom-color: var(--color-secondary);
+  }
+
+  .match-title {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .card {
+    &:not(:last-of-type) {
+      padding-right: 2rem;
+    }
+
+    &:not(:first-of-type) {
+      padding-left: 2rem;
+    }
+
+    &:nth-of-type(2) {
+      background-color: var(--color-darker-primary-50);
+    }
+
+    padding-bottom: 2rem;
+
+    .card-header {
+      padding-top: 12rem;
+      padding-bottom: 1rem;
+    }
+
+    .card-body {
+      white-space: nowrap;
+
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+    }
+  }
 }

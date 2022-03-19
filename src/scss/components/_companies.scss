@@ -1,0 +1,32 @@
+.companies {
+  margin-top: 3rem;
+  overflow: hidden;
+
+  .team-logo {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      transform: translate(-50%);
+      border: 1px solid #ece5e5;
+      z-index: -1;
+    }
+
+    img {
+      width: 50px;
+      background-color: var(--color-white);
+      box-shadow: 0 0 0 15px var(--color-white);
+    }
+  }
+
+  .icon {
+    width: 20%;
+    img {
+      width: 60px;
+    }
+  }
+}
