@@ -1,10 +1,12 @@
 :root {
   --color-white: hsl(0, 0%, 100%);
+  --color-gray: hsl(0, 0%, 50%);
   --color-light-gray: hsl(0, 0%, 67%);
 
   --color-primary: hsl(226, 60%, 38%);
   --color-dark-primary: hsl(222, 22%, 20%);
   --color-darker-primary: hsl(222, 48%, 8%);
+  --color-darker-primary-50: hsl(217, 69%, 12%);
   --color-light-primary: hsl(226, 43%, 49%);
 
   --color-secondary: hsl(354, 86%, 54%);
@@ -14,6 +16,10 @@
 
 .color-white {
   color: var(--color-white);
+}
+
+.color-gray {
+  color: var(--color-gray);
 }
 
 .color-light-gray {
