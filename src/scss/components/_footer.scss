@@ -1,4 +1,15 @@
 .footer {
+  &-links {
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .item-title {
+      margin-bottom: 1rem;
+    }
+  }
+
   .copyright {
     margin-top: 2rem;
     padding-top: 1.5rem;
