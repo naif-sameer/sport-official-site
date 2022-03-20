@@ -63,6 +63,10 @@
     transform: translateX(-110px);
   }
 
+  .border-link {
+    border-block-color: var(--color-secondary);
+  }
+
   &-main-card {
     padding-top: 12rem;
     background-image: url(@images/news/news-1.jpg);
@@ -74,10 +78,6 @@
       width: 60%;
       background-color: hsl(0, 0%, 96%);
       padding: 0.5rem 2rem;
-
-      .border-link {
-        border-block-color: var(--color-secondary);
-      }
     }
   }
 

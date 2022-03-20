@@ -1058,6 +1058,10 @@ template {
           transform: translateX(-110px);
 }
 
+.sport-news .border-link {
+  border-block-color: var(--color-secondary);
+}
+
 .sport-news-main-card {
   padding-top: 12rem;
   background-image: url(@images/news/news-1.jpg);
@@ -1070,10 +1074,6 @@ template {
   width: 60%;
   background-color: whitesmoke;
   padding: 0.5rem 2rem;
-}
-
-.sport-news-main-card .card-content .border-link {
-  border-block-color: var(--color-secondary);
 }
 
 .sport-news-sub-cars {
