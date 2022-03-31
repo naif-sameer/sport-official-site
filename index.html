@@ -103,6 +103,13 @@
           <img src="src/images/icons/linkedin.svg" alt="social media icon" />
         </div>
       </div>
+
+      <!-- slider cursor -->
+      <div class="slider flex gap-1 justify-center">
+        <div class="slider-item active"></div>
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
+      </div>
     </div>
 
     <!-- news -->
@@ -115,12 +122,12 @@
               <img src="src/images/news/news-1.jpg" alt="news background" />
             </div>
 
-            <div class="item">
+            <div class="item-content">
               <div class="sub-title uppercase">latest news</div>
 
               <h2 class="primary-font">Roman Gergle scorer 4 goals</h2>
 
-              <div class="inline-flex gap-3 justify-between items-center">
+              <div class="fs-sm inline-flex gap-3 justify-between items-center">
                 <img src="src/images/icons/hero-link-icon.svg" alt="icon" />
                 <span class="uppercase border-link secondary-font-bold"
                   >more</span
@@ -135,12 +142,12 @@
               <img src="src/images/news/news-2.jpg" alt="news background" />
             </div>
 
-            <div class="item">
+            <div class="item-content">
               <div class="sub-title uppercase">latest news</div>
 
               <h2 class="primary-font">Roman Gergle scorer 4 goals</h2>
 
-              <div class="inline-flex gap-3 justify-between items-center">
+              <div class="fs-sm inline-flex gap-3 justify-between items-center">
                 <img src="src/images/icons/hero-link-icon.svg" alt="icon" />
                 <span class="uppercase border-link secondary-font-bold"
                   >more</span
@@ -266,9 +273,11 @@
         <div class="flex gap-5 justify-between items-center">
           <!-- title -->
           <div class="relative flex flex-col justify-around">
-            <h1 class="fs-ultra-lg secondary-font-bold word-wrap">
+            <h2
+              class="fs-ultra-lg secondary-font-bold word-wrap color-dark-primary"
+            >
               SEA SON STATS
-            </h1>
+            </h2>
 
             <p class="color-gray fs-md">EKSTRAKLASA</p>
           </div>
@@ -332,6 +341,234 @@
       </div>
     </section>
 
+    <!-- sport-news -->
+    <section class="sport-news">
+      <div class="container">
+        <h1
+          class="fs-ultra-lg secondary-font-bold sport-title color-dark-primary"
+        >
+          NEWS
+        </h1>
+      </div>
+
+      <div class="sport-news-content flex items-center">
+        <!-- bg -->
+
+        <div
+          class="sport-news-bg relative color-white flex flex-row items-center"
+        >
+          <!-- video bg -->
+          <div class="sport-news-video">
+            <video loop id="sport-video" width="330" height="450">
+              <source src="src/video/sport.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+
+          <div class="bg-wrapper"></div>
+          <div class="sport-news-bg-content">
+            <!-- video paly/pause  -->
+            <div class="sport-news-bg-icon" id="video-btn">
+              <img
+                src="src/images/icons/video.svg"
+                alt="icon"
+                id="video-btn-play-icon"
+              />
+            </div>
+
+            <div class="badge uppercase fs-sm">club</div>
+
+            <h2 class="fs-lg secondary-font-bold text-white">
+              The goalkeeper was <br />
+              key. Heroic saves
+            </h2>
+
+            <div class="fs-sm inline-flex gap-3 justify-between items-center">
+              <img src="src/images/icons/hero-link-icon.svg" alt="icon" />
+              <span class="uppercase border-link secondary-font-bold">
+                more
+              </span>
+            </div>
+          </div>
+
+          <div
+            data-content="G"
+            class="bg-effect secondary-font-extra-bold absolute left-0"
+          >
+            G
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="cards">
+          <div class="flex gap-4">
+            <!-- main card -->
+            <div class="sport-news-main-card flex justify-end shadow">
+              <div class="card-content">
+                <p class="fs-sm primary-font">
+                  <span class="color-secondary">MATCHES</span>/27.03.2016
+                </p>
+                <h3 class="secondary-font-bold color-dark-primary">
+                  It was a prestige victory
+                </h3>
+
+                <div
+                  class="fs-sm inline-flex gap-3 justify-between items-center"
+                >
+                  <img src="src/images/icons/link-icon-gray.svg" alt="icon" />
+                  <span class="uppercase border-link secondary-font-bold">
+                    more
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- sub cards -->
+            <div
+              class="sport-news-sub-cars justify-between flex flex-col gap-3"
+            >
+              <div class="flex justify-between shadow">
+                <div class="bg">
+                  <img src="src/images/background/sport-news.jfif" alt="" />
+                </div>
+
+                <div class="card-content">
+                  <p class="fs-sm primary-font">
+                    <span class="color-secondary">MATCHES</span>/27.03.2016
+                  </p>
+                  <h3 class="secondary-font-bold color-dark-primary">
+                    It was a prestige victory
+                  </h3>
+
+                  <div
+                    class="fs-sm inline-flex gap-3 justify-between items-center"
+                  >
+                    <img src="src/images/icons/link-icon-gray.svg" alt="icon" />
+                    <span class="uppercase border-link secondary-font-bold">
+                      more
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between shadow">
+                <div class="bg">
+                  <img src="src/images/news/news-2.jpg" alt="" />
+                </div>
+
+                <div class="card-content">
+                  <p class="fs-sm primary-font">
+                    <span class="color-secondary">MATCHES</span>/27.03.2016
+                  </p>
+                  <h3 class="secondary-font-bold color-dark-primary">
+                    It was a prestige victory
+                  </h3>
+
+                  <div
+                    class="fs-sm inline-flex gap-3 justify-between items-center"
+                  >
+                    <img src="src/images/icons/link-icon-gray.svg" alt="icon" />
+                    <span class="uppercase border-link secondary-font-bold">
+                      more
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="eficts text-border position-absolute fw">zabrz</div>
+    </section>
+
+    <!-- last news section -->
+    <section class="last-news">
+      <div class="container">
+        <div class="slider flex gap-1 justify-center">
+          <div class="slider-item active"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+        </div>
+
+        <div class="list flex gap-4">
+          <div class="item">
+            <p class="date">
+              <span class="color-secondary">MATCHES</span>/27.03.2016
+            </p>
+            <h4 class="secondary-font-light fs-md">
+              He's becoming the player I think the con be
+            </h4>
+
+            <div class="inline-flex gap-3 justify-between items-center more">
+              <img src="src/images/icons/link-icon-gray.svg" alt="icon" />
+              <span class="uppercase border-link secondary-font-bold"
+                >more</span
+              >
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">
+              <span class="color-secondary">MATCHES</span>/27.03.2016
+            </p>
+            <h4 class="secondary-font-light fs-md">
+              He's becoming the player I think the con be
+            </h4>
+
+            <div class="inline-flex gap-3 justify-between items-center more">
+              <img src="src/images/icons/link-icon-gray.svg" alt="icon" />
+              <span class="uppercase border-link secondary-font-bold"
+                >more</span
+              >
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">
+              <span class="color-secondary">MATCHES</span>/27.03.2016
+            </p>
+            <h4 class="secondary-font-light fs-md">
+              He's becoming the player I think the con be
+            </h4>
+
+            <div class="inline-flex gap-3 justify-between items-center more">
+              <img src="src/images/icons/link-icon-gray.svg" alt="icon" />
+              <span class="uppercase border-link secondary-font-bold"
+                >more</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- store -->
+    <section class="store relative">
+      <div class="container">
+        <h2 class="secondary-font-bold fs-ultra-lg word-wrap">FAN STORE</h2>
+
+        <div class="store-players">
+          <img src="src/images/players/goalscorer.png" />
+          <img src="src/images/players/goalscorer.png" />
+        </div>
+
+        <div class="store-number">
+          <h3 class="title fs-ultra-lg secondary-font-bold">
+            159 <span>Zt</span>
+          </h3>
+
+          <span class="sub-title">MATCH SHIRT </span>
+        </div>
+
+        <div class="store-effect">
+          <img src="src/images/icons/chelsea.png" />
+        </div>
+
+        <div>
+          <img src="src/images/icons/star.svg" alt="" class="star-icon" />
+        </div>
+      </div>
+    </section>
+
     <!-- companies -->
     <section class="companies">
       <div class="container flex flex-col justify-start items-center">
@@ -374,10 +611,10 @@
     <section class="footer">
       <div class="container flex items-start">
         <!-- links -->
-        <div class="flex gap-5 items-start justify-between fs-sm">
+        <div class="footer-links flex gap-5 items-start justify-between fs-sm">
           <!-- item 1 -->
           <div>
-            <h5 class="fs-md uppercase secondary-font-bold">news</h5>
+            <h2 class="item-title uppercase secondary-font-bold">news</h2>
 
             <div class="flex flex-col gap-3 primary-font color-gray">
               <a href="#" class="uppercase">all</a>
@@ -391,7 +628,7 @@
 
           <!-- item 2 -->
           <div>
-            <h5 class="fs-md uppercase secondary-font-bold">tickets</h5>
+            <h2 class="item-title uppercase secondary-font-bold">tickets</h2>
 
             <div class="flex flex-col gap-3 primary-font color-gray">
               <a href="#" class="uppercase">tickets</a>
@@ -405,7 +642,7 @@
 
           <!-- item 3 -->
           <div>
-            <h5 class="fs-md uppercase secondary-font-bold">matches</h5>
+            <h2 class="item-title uppercase secondary-font-bold">matches</h2>
 
             <div class="flex flex-col gap-3 primary-font color-gray">
               <a href="#" class="uppercase">standings</a>
@@ -418,14 +655,14 @@
 
           <!-- item 4 -->
           <div>
-            <h5 class="fs-md uppercase secondary-font-bold">fans</h5>
+            <h2 class="item-title uppercase secondary-font-bold">fans</h2>
 
             <div class="flex flex-col gap-3 primary-font color-gray">
               <a href="#" class="uppercase">fan clubs</a>
               <a href="#" class="uppercase">social media</a>
             </div>
 
-            <h5 class="fs-md uppercase secondary-font-bold">fans</h5>
+            <h2 class="item-title uppercase secondary-font-bold">fans</h2>
             <div class="flex flex-col gap-3 primary-font color-gray">
               <a href="#" class="uppercase nowrap">arena tour</a>
               <a href="#" class="uppercase">matchday tour</a>

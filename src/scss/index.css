@@ -56,6 +56,12 @@
   padding-right: 1.5rem;
 }
 
+.badge {
+  display: inline-block;
+  padding: 0.25rem 1.6rem;
+  background-color: var(--color-secondary);
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -183,8 +189,33 @@
   position: relative;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
 .m-0 {
   margin: 0;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -710,7 +741,7 @@ template {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url(@image/background/hero.jpg);
+  background-image: url(@images/background/hero.jpg);
   background-size: cover;
   -webkit-box-shadow: 0 0 0 100rem rgba(0, 0, 0, 0.6) inset;
           box-shadow: 0 0 0 100rem rgba(0, 0, 0, 0.6) inset;
@@ -726,12 +757,6 @@ template {
 
 .hero .hero-start {
   padding: 10rem 2rem;
-}
-
-.hero .hero-start .badge {
-  display: inline-block;
-  padding: 0.25rem 1.6rem;
-  background-color: var(--color-secondary);
 }
 
 .hero .hero-start .hero-title {
@@ -968,6 +993,108 @@ template {
   right: 7rem;
 }
 
+.sport-news .bg-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 6, 6, 0.36);
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+  z-index: 10;
+}
+
+.sport-news-bg {
+  position: relative;
+  background-image: url("@images/background/sport-news.jfif");
+  background-size: cover;
+  background-position: center;
+  min-width: 330px;
+  max-width: 450px;
+  height: 420px;
+  padding: 2rem 6rem;
+}
+
+.sport-news-bg-content {
+  z-index: 20;
+}
+
+.sport-news-bg .bg-effect {
+  font-size: 12rem;
+  color: var(--color-white);
+  z-index: 30;
+  bottom: -6rem;
+}
+
+.sport-news-bg .bg-effect::after {
+  content: attr(data-content);
+  position: absolute;
+  bottom: 5px;
+  left: 11px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(240, 240, 240, 0.3);
+  z-index: -1;
+}
+
+.sport-news-bg-icon {
+  margin-bottom: 1rem;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 0.486);
+  padding: 1rem;
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+}
+
+.sport-news .sport-title {
+  margin-top: 6rem;
+}
+
+.sport-news .cards {
+  min-width: 66vw;
+  -webkit-transform: translateX(-110px);
+          transform: translateX(-110px);
+}
+
+.sport-news .border-link {
+  border-block-color: var(--color-secondary);
+}
+
+.sport-news-main-card {
+  padding-top: 12rem;
+  background-image: url(@images/news/news-1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+}
+
+.sport-news-main-card .card-content {
+  width: 60%;
+  background-color: whitesmoke;
+  padding: 0.5rem 2rem;
+}
+
+.sport-news-sub-cars {
+  width: 50%;
+}
+
+.sport-news-sub-cars .bg {
+  width: 60%;
+}
+
+.sport-news-sub-cars .bg img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sport-news-sub-cars .card-content {
+  background-color: whitesmoke;
+  padding: 1rem 2rem;
+}
+
 .companies {
   margin-top: 3rem;
   overflow: hidden;
@@ -1002,6 +1129,162 @@ template {
 
 .companies .icon img {
   width: 60px;
+}
+
+.sss {
+  /* Start Services Section */
+  /* Start store section */
+  /* End store section */
+}
+
+.sss .services {
+  min-height: 70%;
+}
+
+.sss .services .all-items {
+  height: 50vh;
+  width: 80vw;
+}
+
+.sss .services .items {
+  padding: 10px;
+  margin: 10px;
+}
+
+.sss .services .all-items h1 {
+  margin: 20px 0;
+}
+
+.sss .services .all-items .efict {
+  font-size: 20rem;
+  left: 40%;
+  top: -40%;
+  z-index: 0;
+}
+
+.sss .store {
+  min-height: 70vh;
+}
+
+.sss .store::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 1;
+}
+
+.sss .store .main-img {
+  height: 70vh;
+  width: 100vw;
+}
+
+.sss .store .image {
+  height: 100%;
+  width: 75%;
+}
+
+.sss .store .image img {
+  height: 106%;
+  width: 30%;
+  left: 50%;
+  top: -20px;
+}
+
+.sss .store .image .img2 {
+  left: 20%;
+}
+
+.sss .store .image h1 {
+  margin-top: 20px;
+  width: 10%;
+  font-size: 5rem;
+}
+
+.sss .store .image .num {
+  top: 10%;
+  left: 72%;
+}
+
+.sss .store .image .num h1 {
+  font-size: 12rem;
+  margin-bottom: -10px;
+  line-height: 0.8;
+}
+
+.sss .store .image .num p {
+  color: #cecdcd;
+}
+
+.sss .store .image .num h2 {
+  top: 65%;
+  left: 100%;
+}
+
+.sss .store .box1 {
+  width: 6%;
+  height: 17%;
+  top: -17%;
+  left: 85%;
+}
+
+.sss .store .box2 {
+  width: 6%;
+  height: 18%;
+  top: 0%;
+  left: 79%;
+}
+
+.sss .store .box2 .fa {
+  margin: 40%;
+}
+
+.sss .store .box3 {
+  width: 4%;
+  height: 13%;
+  top: 25%;
+  left: 20%;
+}
+
+.sss .store .box4 {
+  width: 8%;
+  height: 22%;
+  top: 37%;
+  left: 24%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sss .store .box4 h1 {
+  font-size: 10rem;
+  color: #4d4a4a2a;
+  font-weight: bold;
+}
+
+.sss .store .box5 {
+  width: 5%;
+  height: 15%;
+  top: 32%;
+  left: 50%;
+}
+
+.footer-links h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links .item-title {
+  margin-bottom: 1rem;
 }
 
 .footer .copyright {

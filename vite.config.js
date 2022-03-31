@@ -6,7 +6,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@fonts': resolve(__dirname, 'src', 'fonts'),
-      '@image': resolve(__dirname, 'src', 'images'),
+      '@images': resolve(__dirname, 'src', 'images'),
     },
   },
 });
