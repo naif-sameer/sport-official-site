@@ -1131,6 +1131,153 @@ template {
   width: 60px;
 }
 
+.sss {
+  /* Start Services Section */
+  /* Start store section */
+  /* End store section */
+}
+
+.sss .services {
+  min-height: 70%;
+}
+
+.sss .services .all-items {
+  height: 50vh;
+  width: 80vw;
+}
+
+.sss .services .items {
+  padding: 10px;
+  margin: 10px;
+}
+
+.sss .services .all-items h1 {
+  margin: 20px 0;
+}
+
+.sss .services .all-items .efict {
+  font-size: 20rem;
+  left: 40%;
+  top: -40%;
+  z-index: 0;
+}
+
+.sss .store {
+  min-height: 70vh;
+}
+
+.sss .store::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 1;
+}
+
+.sss .store .main-img {
+  height: 70vh;
+  width: 100vw;
+}
+
+.sss .store .image {
+  height: 100%;
+  width: 75%;
+}
+
+.sss .store .image img {
+  height: 106%;
+  width: 30%;
+  left: 50%;
+  top: -20px;
+}
+
+.sss .store .image .img2 {
+  left: 20%;
+}
+
+.sss .store .image h1 {
+  margin-top: 20px;
+  width: 10%;
+  font-size: 5rem;
+}
+
+.sss .store .image .num {
+  top: 10%;
+  left: 72%;
+}
+
+.sss .store .image .num h1 {
+  font-size: 12rem;
+  margin-bottom: -10px;
+  line-height: 0.8;
+}
+
+.sss .store .image .num p {
+  color: #cecdcd;
+}
+
+.sss .store .image .num h2 {
+  top: 65%;
+  left: 100%;
+}
+
+.sss .store .box1 {
+  width: 6%;
+  height: 17%;
+  top: -17%;
+  left: 85%;
+}
+
+.sss .store .box2 {
+  width: 6%;
+  height: 18%;
+  top: 0%;
+  left: 79%;
+}
+
+.sss .store .box2 .fa {
+  margin: 40%;
+}
+
+.sss .store .box3 {
+  width: 4%;
+  height: 13%;
+  top: 25%;
+  left: 20%;
+}
+
+.sss .store .box4 {
+  width: 8%;
+  height: 22%;
+  top: 37%;
+  left: 24%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sss .store .box4 h1 {
+  font-size: 10rem;
+  color: #4d4a4a2a;
+  font-weight: bold;
+}
+
+.sss .store .box5 {
+  width: 5%;
+  height: 15%;
+  top: 32%;
+  left: 50%;
+}
+
 .footer-links h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;

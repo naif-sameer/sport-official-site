@@ -1,0 +1,39 @@
+.last-news {
+  margin-top: 4rem;
+
+  .border-link {
+    border-color: var(--color-secondary);
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+
+  .list {
+    counter-set: lastItem;
+  }
+
+  .item {
+    position: relative;
+    padding: 2rem 1rem;
+    border-radius: 0.25rem;
+    counter-increment: lastItem;
+
+    &::after {
+      content: '0' counter(lastItem);
+      color: rgba(204, 204, 204, 0.3);
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      font-size: 12rem;
+      transform: translateY(-50%);
+      font-family: 'Montserrat', sans-serif;
+      font-variation-settings: 'wght' 800;
+    }
+  }
+
+  .more {
+    width: 20px;
+    font-size: 0.8rem;
+  }
+}

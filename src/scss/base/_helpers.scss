@@ -13,6 +13,21 @@
   background-color: var(--color-secondary);
 }
 
+.slider {
+  margin-bottom: 0.25rem;
+}
+.slider-item {
+  --bg-color: #222;
+  width: 2rem;
+  height: 3px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+
+  &.active {
+    background-color: var(--color-secondary);
+  }
+}
+
 .uppercase {
   text-transform: uppercase;
 }
