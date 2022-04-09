@@ -117,4 +117,14 @@
       padding: 1rem 2rem;
     }
   }
+
+  @media (max-width: 500px) {
+    .cards {
+      display: none;
+    }
+
+    .sport-news-bg {
+      min-width: 240px;
+    }
+  }
 }

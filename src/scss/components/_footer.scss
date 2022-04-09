@@ -16,4 +16,21 @@
     padding-bottom: 1.5rem;
     background-color: hsl(0, 0%, 88%);
   }
+
+  @media (max-width: 500px) {
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: left;
+
+      & > * {
+        width: 40%;
+      }
+    }
+
+    .copyright {
+      .container {
+        flex-direction: column;
+      }
+    }
+  }
 }

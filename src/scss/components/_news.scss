@@ -30,4 +30,20 @@
       }
     }
   }
+
+  @media (max-width: 500px) {
+    box-sizing: border-box;
+    position: static;
+    right: 0;
+    padding: 2rem 1rem;
+    background-color: var(--color-darker-primary);
+
+    & > div {
+      flex-direction: column;
+    }
+
+    .news-item {
+      max-width: 100%;
+    }
+  }
 }

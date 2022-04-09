@@ -87,4 +87,24 @@
       right: 7rem;
     }
   }
+
+  @media (max-width: 500px) {
+    .goalscorer-body {
+      flex-direction: column;
+    }
+
+    .goalscorer-body {
+      .player {
+        padding-top: 0;
+      }
+
+      .player-name {
+        right: 0;
+      }
+
+      .player-info {
+        margin-top: 4rem;
+      }
+    }
+  }
 }

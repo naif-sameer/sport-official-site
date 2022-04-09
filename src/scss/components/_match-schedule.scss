@@ -42,4 +42,31 @@
       }
     }
   }
+
+  @media (max-width: 500px) {
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+
+    .cards-wrapper {
+      flex-direction: column;
+    }
+
+    .card {
+      padding: 1rem;
+
+      .card-body {
+        white-space: normal;
+      }
+    }
+
+    .card:not(:first-of-type) .card-header {
+      padding-top: 4rem;
+    }
+  }
 }

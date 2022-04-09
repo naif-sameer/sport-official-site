@@ -1,3 +1,9 @@
 @import 'helpers';
 @import 'normalize';
 @import 'typography';
+
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+}

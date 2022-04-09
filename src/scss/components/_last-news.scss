@@ -18,22 +18,44 @@
     padding: 2rem 1rem;
     border-radius: 0.25rem;
     counter-increment: lastItem;
+    min-width: 300px;
 
     &::after {
       content: '0' counter(lastItem);
       color: rgba(204, 204, 204, 0.3);
       position: absolute;
-      top: 50%;
-      right: 2rem;
-      font-size: 12rem;
+      top: 45%;
+      right: -1rem;
+      font-size: 9rem;
       transform: translateY(-50%);
       font-family: 'Montserrat', sans-serif;
       font-variation-settings: 'wght' 800;
+
+      //   content: '0' counter(lastItem);
+      //   color: rgba(204, 204, 204, 0.3);
+      //   position: absolute;
+      //   top: 50%;
+      //   right: 2rem;
+      //   font-size: 12rem;
+      //   transform: translateY(-50%);
+      //   font-family: 'Montserrat', sans-serif;
+      //   font-variation-settings: 'wght' 800;
     }
   }
 
   .more {
     width: 20px;
     font-size: 0.8rem;
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      padding-left: 0;
+    }
+
+    .list {
+      max-width: 80%;
+      margin: auto;
+    }
   }
 }

@@ -1,0 +1,21 @@
+.c-slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.c-slider {
+  transition: transform 0.4s linear;
+  display: flex;
+  position: relative;
+  top: 0;
+
+  &-item {
+    cursor: pointer;
+    // flex-direction: column;
+    justify-content: space-between;
+    transition: all 1s;
+    position: relative;
+    border-radius: 2px;
+  }
+}

@@ -8,6 +8,7 @@ import PauseIcon from '../images/icons/pause.svg';
 import PlayIcon from '../images/icons/video.svg';
 
 let isVideoPlayed = false;
+
 videoBtn.addEventListener('click', () => {
   isVideoPlayed = !isVideoPlayed;
 

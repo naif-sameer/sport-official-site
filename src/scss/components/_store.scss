@@ -92,4 +92,24 @@
     right: 144px;
     width: 20px;
   }
+
+  @media (max-width: 500px) {
+    .store-players {
+      max-width: 100%;
+      transform: translate(-3rem, -18.1rem);
+
+      img:first-of-type {
+        display: none;
+      }
+    }
+
+    .store-number {
+      top: -110px;
+      right: 60px;
+    }
+
+    .store-effect {
+      box-shadow: 70px -312px 0 -20px var(--color-secondary);
+    }
+  }
 }
